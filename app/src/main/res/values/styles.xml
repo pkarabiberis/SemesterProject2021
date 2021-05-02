@@ -1,0 +1,32 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="actionBarStyle">@style/ActionBarTheme</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="colorOnPrimary">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="android:editTextColor">@color/colorAccent</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
+    </style>
+
+    <style name="ActionBarText">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/rubik_bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="ActionBarTheme" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/colorPrimaryDark</item>
+        <item name="elevation">0dp</item>
+        <item name="titleTextStyle">@style/ActionBarText</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorAccent</item>
+    </style>
+
+</resources>

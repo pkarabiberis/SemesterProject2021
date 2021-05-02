@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KausiprojektiKevat</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="google_maps_key">AIzaSyDcQYsXdTvPx_I_E5gKdt5JeGJXOHsk1tc</string>
+</resources>

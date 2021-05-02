@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/locationImageView"
+            android:background="@color/colorPrimary"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/weekOfDayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maanantai"
+            android:fontFamily="@font/rubik_light"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/locationImageView"
+            app:layout_constraintStart_toStartOf="@id/locationImageView"
+            app:layout_constraintEnd_toEndOf="@id/locationImageView"
+            />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/foreCastImageLoader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/locationImageView"
+            app:trackColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/forecastTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik_semibold"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/locationImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="@font/rubik_light"
+            android:layout_marginTop="4dp"
+            android:paddingBottom="4dp"
+            app:layout_constraintTop_toBottomOf="@id/forecastTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/dailyMinMaxTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/locationImageView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:fontFamily="@font/rubik_semibold"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
